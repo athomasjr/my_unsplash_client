@@ -1,5 +1,15 @@
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+import Router from "./Router";
+
+const queryClient = new QueryClient();
 function App() {
-  return <div>hello world</div>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Router />
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
