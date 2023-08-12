@@ -27,7 +27,7 @@ module.exports = {
     sourceType: `module`,
     project: `./tsconfig.json`,
   },
-  plugins: [`react`, `@typescript-eslint`, `react-refresh`, `unused-imports`, `import`],
+  plugins: [`react`, `@typescript-eslint`, `react-refresh`, `unused-imports`, `import`, `prettier`],
   rules: {
     "react/react-in-jsx-scope": 0,
     "@typescript-eslint/quotes": [`error`, `backtick`],
